@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: white;
+    overflow: hidden;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+    background-color: black;
+    
+}
+
+#heart {
+    font-size: 255px;
+
+    background-image: url(./wave.png);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: red;
+    background-size: cover;
+    background-position-x: 20%;
+    background-position-y: 20%;
+
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    transition: all 1s;
+}
+
+.question--box {
+    width: 100%;
+    /* height: 30%; */
+    /* background-color: red; */
+
+    position: absolute;
+    left: 0%;
+    bottom: 5%;
+
+    padding: 20px;
+}
+
+.question {
+    font-size: 22px;
+    text-align: center;
+    color: bisque;
+}
+
+.option-holder {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat((2, 1fr));
+    gap: 10px;
+}
+
+.option {
+    background-color: orangered;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 1px solid wheat;
+    text-align: center;
+    list-style: none;
+    cursor: pointer;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+}
+
+.end {
+    font-size: 455px;
+}
+
+.end-display {
+    transition: all 1s;
+
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    transform-origin: left top;
+    text-align: center;
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    scale: 1;
+}
+
+.display {
+    scale: 0;
+}
+
+.massage {
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    color: tomato;
+    padding: 30px;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hi {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
